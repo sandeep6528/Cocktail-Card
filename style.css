@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    background: radial-gradient(circle, rgb(254,246,233)12%,
+    rgb(50, 76, 167) 52%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container{
+    max-width: 400px;
+    width: 100%;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+#head{
+    width: 100%;
+    background: url('mint.jpg') no-repeat center/cover;
+    height: 300px;
+
+
+}
+
+article{
+    padding: 25px;
+    overflow: hidden;
+    max-height: 400px;
+    transition: 0.5s linear;
+}
+
+.container.close.article{
+    max-height: 0;
+    padding: 0 30px;
+}
+
+.title{font-size: 1.5rem;
+    padding: 15px 20px 5px;
+    border-bottom: 1px solid #ddd;
+
+}
+
+.container.close .title{
+    margin-top:  -60px;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 1.7rem;
+    text-shadow: 5px 1px royalblue;
+
+}
+
+#head{
+    cursor: pointer;
+}
+
+ul{
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+ul li{
+     display: flex;
+}
+
+ul li span{
+    flex-basis: 60%;
+    margin-bottom: 10px;
+}
+
+.col{
+    color:#2E0aaf;
+    font-weight: bold;
+    flex-basis: 40%;
+}
+
+article p{
+    margin-bottom: 10px;
+    text-align: justify;
+    color: #343434;
+    line-height: 1.4;
+}
